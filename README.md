@@ -98,6 +98,23 @@ git merge upstream/main
 node scripts/build-codex-skill.mjs
 ```
 
+### Automatic Sync (GitHub Actions)
+
+A weekly GitHub Actions workflow (`.github/workflows/sync-upstream.yml`) automatically:
+
+1. Fetches the latest commits from `upstream/main`
+2. Merges them into the fork
+3. If conflicts occur in our customized files (`README.md`, `.gitignore`), keeps our versions
+4. Rebuilds `dist/SKILL.md` from any updated templates
+5. Pushes the result to `main`
+6. If conflicts appear in files we did **not** customize, it creates a PR for manual review
+
+To use this:
+- Push the fork to GitHub
+- Enable Actions in repo settings (Settings > Actions > Allow all actions)
+- The workflow runs every Monday at 06:00 UTC, or trigger it manually from the Actions tab
+
+
 ## Project Structure
 
 ```
