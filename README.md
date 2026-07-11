@@ -1,8 +1,8 @@
 # UI/UX Pro Max for Codex
 
-A **Codex-optimized fork** of [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) by NextLevelBuilder.
+A Codex design intelligence skill with a searchable database of 84 UI styles, 161 color palettes, 73 font pairings, 99 UX guidelines, and 25 chart types across 22 tech stacks.
 
-This fork removes the npm CLI dependency. Instead, the `SKILL.md` is pre-built and a single `install.sh` copies everything into `.codex/skills/`. No Node, no bun, no build step required at install time.
+No npm CLI dependency. The `SKILL.md` is pre-built and a single `install.sh` copies everything into `.codex/skills/`. No Node, no bun, no build step required at install time.
 
 ## What It Does
 
@@ -133,10 +133,10 @@ To use this:
 └── README.md                    # This file
 ```
 
-## Credits
+## License
 
-- **Original author**: [NextLevelBuilder](https://github.com/nextlevelbuilder)
-- **Original repo**: [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill)
-- **License**: MIT
+MIT License. See [LICENSE](LICENSE) for details.
 
-This fork only modifies the installation method (pre-built SKILL.md + shell installer instead of npm CLI). All design data, scripts, and intelligence come from the upstream project.
+This project is derived from [ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) by [NextLevelBuilder](https://github.com/nextlevelbuilder), originally licensed under MIT. All design data, Python scripts, and intelligence content originate from the upstream project. This repository modifies only the installation method (pre-built SKILL.md + shell installer instead of npm CLI) and adds automatic upstream sync via GitHub Actions.
+
+The original copyright notice is preserved in the LICENSE file as required by the MIT license.
