@@ -30,7 +30,8 @@ pnpm-debug.log*
 node_modules/
 
 # Build output
-dist/
+dist/*
+!dist/SKILL.md
 build/
 .next/
 .nuxt/
